@@ -785,7 +785,7 @@ gulp.task('bundle.js.prod.deps', ['bundle.js.prod'], function() {
 
 gulp.task('bundle.js.min.deps', ['bundle.js.min'], function() {
   return bundler.modify(
-      ['node_modules/zone.js/dist/zone-microtask.js', 'dist/build/angular2.min.js'],
+      ['node_modules/zone.js/dist/zone-microtask.min.js', 'dist/build/angular2.min.js'],
       'angular2.min.js'
   ).pipe(gulp.dest('dist/bundle'));
 });
